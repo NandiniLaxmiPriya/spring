@@ -1,0 +1,20 @@
+package com.example.demoo.resource;
+
+import java.util.Arrays;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/crudmvc")
+public class StudentResource {
+
+	List<Student> students = Arrays.asList(
+			new Student("A1","Haryy","CSE"),new Student("A2","Potter","ECE"),new Student("A3","Chimper","EEE"));
+	@GetMapping("/student")
+	public String getStudents()
+	{
+		return "Hey you crudmvc";
+	}
+}

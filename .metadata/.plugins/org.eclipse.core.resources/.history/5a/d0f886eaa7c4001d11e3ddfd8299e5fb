@@ -1,0 +1,5 @@
+package com.ags.mvc.resource;
+
+public class StudentsResource {
+
+}

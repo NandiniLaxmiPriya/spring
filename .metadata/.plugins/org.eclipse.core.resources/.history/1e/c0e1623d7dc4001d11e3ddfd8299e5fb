@@ -1,0 +1,11 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/greeting
+spring.datasource.username=greetusr
+spring.datasource.password=Greet@123
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.hikari.maximumPoolSize=2
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
+remote.server.api=http://localhost:8080/api/
+

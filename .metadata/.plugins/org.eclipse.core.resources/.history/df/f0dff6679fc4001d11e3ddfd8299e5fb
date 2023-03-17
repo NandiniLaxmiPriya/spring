@@ -1,0 +1,31 @@
+package com.example.demoo.resource;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demoo.model.Student;
+
+@Service
+public class StudentService {
+
+	List<Student> students = new ArrayList(Arrays.asList(
+			new Student("A1","Haryy","CSE"),new Student("A2","Potter","ECE"),new Student("A3","Chimper","EEE")));
+	public List<Student> getAll(){
+		return students;
+	}
+	
+	public Student getStudentById(String Id) {
+		Student s = students.stream()
+				.filter(student -> Id.equals(student.getId()))
+				.findAny()
+				.orElse(null);
+		return s;
+	}
+
+	public void addStudent(Student student) {
+		// TODO Auto-generated method stub
+		students.add(student);
+	}
+}

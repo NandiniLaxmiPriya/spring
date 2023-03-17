@@ -1,0 +1,13 @@
+package com.example.demo.mail;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.mail.javamail.JavaMailSender;
+
+@Configuration
+public class Configu {
+	@Bean
+	public MailSender mockMailSender(JavaMailSender javaMailSender) {
+		return new MockMailSender(javaMailSender);
+	}
+}

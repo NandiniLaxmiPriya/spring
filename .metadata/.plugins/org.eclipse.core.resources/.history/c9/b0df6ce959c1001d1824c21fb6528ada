@@ -1,0 +1,18 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.mail.MailSender;
+import com.example.demo.mail.MockMailSender;
+
+@RestController
+public class MockMailSenderController {
+	MailSender mail = new MockMailSender();
+	@RequestMapping("/mail")
+	public String message()
+	{
+		mail.send("nandini.laxmi.priya@gmail.com", "Hey", "How are you?");
+		return "Mail sent";
+	}
+}

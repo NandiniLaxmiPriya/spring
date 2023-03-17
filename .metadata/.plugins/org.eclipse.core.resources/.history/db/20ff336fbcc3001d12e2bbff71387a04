@@ -1,0 +1,8 @@
+package com.example.demotwo.subs;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AccessJdbcApplication {
+
+}

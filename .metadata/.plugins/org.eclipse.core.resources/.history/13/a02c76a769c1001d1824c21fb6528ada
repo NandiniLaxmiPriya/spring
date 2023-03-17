@@ -1,0 +1,18 @@
+package com.example.demo.mail;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.mail.javamail.JavaMailSender;
+
+@Configuration
+public class Configu {
+	 
+
+    @Bean
+    @ConditionalOnProperty("spring.mail.host")
+    MailSender mockMailSender(JavaMailSender javaMailSender) {
+        return new MockMailSender(javaMailSender);
+    }
+}

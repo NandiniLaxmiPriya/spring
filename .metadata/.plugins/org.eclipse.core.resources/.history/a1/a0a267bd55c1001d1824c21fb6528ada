@@ -1,0 +1,9 @@
+package com.example.demo.mail;
+
+public class MockMailSender implements MailSender {
+
+	public void send(String to,String subject,String body)
+	{
+		
+	}
+}

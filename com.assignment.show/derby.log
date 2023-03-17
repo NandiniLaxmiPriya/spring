@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Fri Mar 17 11:09:47 IST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0186-ee14-d3be-0000012be668 
+on database directory memory:/home/beehyv/eclipse-workspace/spring/com.assignment.show/a333ab96-4156-4909-b06a-2045c469fc50 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7 
+Loaded from file:/home/beehyv/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
+java.vendor=Private Build
+java.runtime.version=19.0.2+7-Ubuntu-0ubuntu322.04
+user.dir=/home/beehyv/eclipse-workspace/spring/com.assignment.show
+os.name=Linux
+os.arch=amd64
+os.version=5.19.0-35-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Mar 17 11:10:31 IST 2023:
+Shutting down instance a816c00e-0186-ee14-d3be-0000012be668 on database directory memory:/home/beehyv/eclipse-workspace/spring/com.assignment.show/a333ab96-4156-4909-b06a-2045c469fc50 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7 

@@ -1,0 +1,16 @@
+#spring.mail.host=smtp.gmail.com
+#spring.mail.username=nandini.laxmi.priya@gmail.com
+#spring.mail.password=nfeowbmhbwypsiqt
+#
+#spring.mail.properties.mail.smtp.auth=true
+#spring.mail.properties.mail.smtp.socketFactory.port = 587
+#spring.mail.properties.mail.smtp.socketFactory.class = javax.net.ssl.SSLSocketFactory
+#spring.mail.properties.mail.smtp.socketFactory.fallback = false
+#spring.mail.properties.mail.smtp.ssl.enable = true
+#spring.mail.properties.mail.smtp.starttls.enable=true
+
+spring.profiles.active=dev## Email configuration
+udeesa.email.sender.host=smtp.gmail.com
+udeesa.email.sender.debug=true
+udeesa.email.sender.user={youremail}
+udeesa.email.sender.password={yourpassword}

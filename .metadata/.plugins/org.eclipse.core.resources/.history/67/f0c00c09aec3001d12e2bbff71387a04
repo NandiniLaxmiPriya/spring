@@ -1,0 +1,8 @@
+package com.example.demos.sub;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingController {
+	private static final String message="Hello, %s!";
+}

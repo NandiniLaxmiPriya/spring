@@ -1,0 +1,18 @@
+package com.example.demotwo;
+
+public class Students {
+	private int id;
+	private String fname;
+	private String lname;
+	public Students(int id, String fname,String lname) {
+		super();
+		this.id = id;
+		this.fname = fname;
+		this.lname = lname;
+	}
+	@Override
+	public String toString() {
+		return "Students [id=" + id + ", name=" + sname + ", age=" + age + "]";
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.example.demoo.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demoo.model.Student;
+
+@RestController
+@RequestMapping("/crudmvc")
+public class StudentResource {
+
+	@Autowired
+	private StudentService studentService;
+	
+	@GetMapping("/student")
+	public List<Student> getStudents()
+	{
+		return studentService.getAll();
+	}
+	@GetMapping("/student/{Id}")
+	public Student getStudentById(@PathVariable("Id")String Id) {
+		return studentService.getStudentById(Id);
+	}
+	
+}

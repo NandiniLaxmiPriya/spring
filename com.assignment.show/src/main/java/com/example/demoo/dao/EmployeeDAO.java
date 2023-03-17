@@ -1,0 +1,10 @@
+package com.example.demoo.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+import com.example.demoo.model.Employee;
+
+public interface EmployeeDAO extends CrudRepository<Employee,Integer> {
+
+}

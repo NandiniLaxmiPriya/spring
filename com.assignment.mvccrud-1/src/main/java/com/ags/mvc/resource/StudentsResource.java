@@ -1,0 +1,48 @@
+package com.ags.mvc.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ags.mvc.model.Students;
+
+@RestController
+@RequestMapping("/crudmvc")
+public class StudentsResource {
+
+	@Autowired
+	private StudentsService studentService;
+	
+	@GetMapping("/student")
+	public List<Students> getStudents()
+	{
+		return studentService.getAll();
+	}
+	@GetMapping("/student/{Id}")
+	public Students getStudentById(@PathVariable("Id")String Id) {
+		return studentService.getStudentById(Id);
+	}
+	
+	@PostMapping("/student")
+	public void addStudent(@RequestBody Students student) {
+		studentService.addStudent(student);
+	}
+	@PutMapping("/student/{Id}")
+	public void updateStudent(@PathVariable("Id")String Id, @RequestBody Students student)
+	{
+		studentService.updateStudent(Id,student);
+	}
+	@DeleteMapping("/student/{Id}")
+	public void deleteStudent(@PathVariable("Id")String Id)
+	{
+		studentService.deleteStudent(Id);
+	}
+}

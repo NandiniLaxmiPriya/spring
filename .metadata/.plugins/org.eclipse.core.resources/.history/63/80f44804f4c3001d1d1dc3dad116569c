@@ -1,0 +1,8 @@
+package com.example.demoo.model;
+@Entity
+@Table(name="Ticket")
+public class Ticket {
+	private int id;
+	private double amount;
+	private String category;
+}

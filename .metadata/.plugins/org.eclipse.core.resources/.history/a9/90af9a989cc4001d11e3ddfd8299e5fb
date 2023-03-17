@@ -1,0 +1,5 @@
+package com.example.demoo.resource;
+
+public class StudentService {
+
+}

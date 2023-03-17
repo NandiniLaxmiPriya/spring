@@ -1,0 +1,12 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MockMailSenderController {
+	@RequestMapping("/mail")
+	public String message()
+	{
+		return "Mail sent";
+	}
+}

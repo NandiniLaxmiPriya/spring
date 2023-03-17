@@ -1,0 +1,5 @@
+package com.ags.mvc.model;
+
+public class Students {
+
+}
